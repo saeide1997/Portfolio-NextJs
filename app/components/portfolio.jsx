@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import PortfolioList from "./portfolioList";
 import { featuredPortfolio, webPortfolio, mobilePortfolio } from "../data.js";
+import Image from "next/image";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("wordpress");
@@ -22,6 +23,7 @@ const Portfolio = () => {
       title: "طراحی سایت",
     },
   ];
+  console.log(data);
 
   useEffect(() => {
     switch (selected) {
@@ -63,10 +65,11 @@ const Portfolio = () => {
             className="cursor-pointer flex flex-col tran w-[220px] h-[150px] relative border rounded-2xl border-solid mx-5 my-3 items-center justify-center hover:bg-violet-300/30 max-[640px]:w-[150px] max-[640px]:h-[120px]"
             style={{ zIndex: "9" }}
           >
-            <img
+            <Image
               className="w-[100%] h-[100%] object-cover rounded-2xl z-10 hover:opacity-20"
               src={item.img}
               alt=""
+              fill
             />
             <h3 className="absolute text-[20px]">{item.title}</h3>
           </div>
