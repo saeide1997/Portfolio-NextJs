@@ -46,7 +46,7 @@ const Works = () => {
     }
 
   return (
-    <div className="bg-violet-600 h-[100vh] flex items-center justify-center relative overflow-hidden" id="Works">
+    <div className="bg-violet-500 flex items-center justify-center relative overflow-hidden" id="Works">
       <div className="h-[400px] flex absolute left-0 tran max-[640px]:h-[100vh] max-[640px]:flex-col max-[640px]:justify-center" style={{transform: `translateX(-${currentSlide *100}vw)`}}>
         {data.map((item, index)=>(
             <React.Fragment key={index}>

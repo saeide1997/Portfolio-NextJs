@@ -4,7 +4,7 @@ import contact from "@/assets/img/shake.svg"
 
 const Contact = () => {
     return (
-        <div className="bg-white h-[100vh] flex items-center max-[640px]:flex-col" id="Contact">
+        <div className="bg-white  flex items-center max-[640px]:flex-col" id="Contact">
             <div className='h-[100%] flex1 overflow-hidden '>
                 <Image className='h-[100%] ' src={contact} alt="" />
             </div>

@@ -22,7 +22,7 @@ const Intro = () => {
 
     return (
         
-        <div className='bg-white h-[100vh]  flex max-[1000px]:flex-col max-[1000px]:items-center'  id="Intro">
+        <div className='bg-white flex max-[1000px]:flex-col max-[1000px]:items-center'  id="Intro">
             <div className="flex-1 relative w-[100%]">
                 <div className="w-[100%] h-[100%] mr-10 pl-12 flex flex-col justify-center max-[1000px]:pl-0 max-[1000px]:items-center max-[1000px]:mr-0">
                     <h2 className="text-[30px] my-1">سلام ...</h2>
