@@ -59,12 +59,12 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="w-[70%]  flex items-center justify-center flex-wrap max-[640px]:w-[100%]">
-      <div className="z-0 w-[1000px] h-[400px] rounded-r-full left-[20px] mt-[500px] portBoxShadow  absolute"></div>
-      <div className="z-0 w-[400px] h-[800px] rounded-b-full right-[100px] mb-48 portBoxShadow  absolute"></div>
+      <div className="z-0 w-[1000px] h-[400px] rounded-r-full left-[20px] mt-[500px] insideShadow  absolute"></div>
+      <div className="z-0 w-[400px] h-[800px] rounded-b-full right-[100px] mb-48 insideShadow  absolute"></div>
         {data.map((item, index) => (
             <React.Fragment key={index}>
           <div
-            className="cursor-pointer portBoxShadow hover:shadow-none flex flex-col tran w-[320px] h-[200px] relative border rounded-xl border-solid mx-5 my-3 items-center justify-center hover:bg-violet-300/30 max-[640px]:w-[150px] max-[640px]:h-[120px]"
+            className="cursor-pointer portBoxShadow hover:shadow-none flex flex-col tran w-[320px] h-[200px] relative border rounded-xl border-solid mx-5 my-3 items-center justify-center boldShab hover:bg-violet-500 text-white max-[640px]:w-[150px] max-[640px]:h-[120px]"
             style={{ zIndex: "9" }}
           >
             <Image
@@ -73,7 +73,7 @@ const Portfolio = () => {
               alt=""
               fill
             />
-            <h3 className="absolute text-[20px]">{item.title}</h3>
+            <h3 className="absolute text-[24px]">{item.title}</h3>
           </div>
           </React.Fragment>
         ))}
